@@ -1,0 +1,21 @@
+Firstly, in order to test the functionality of the Booking.com website, the decision was made to use the Cypress testing framework. Cypress is a JavaScript-based testing framework that allows for end-to-end testing of web applications.
+
+The next decision was to write the test using the Page Object Model (POM) design pattern. The POM pattern is a design pattern used in software testing that helps to create an object repository for web UI elements. 
+This approach can help to make tests more maintainable and readable, as it separates the test code from the page code.
+
+
+To create the test, the following steps were taken:
+
+Load the Booking.com website using the cy.visit() command.
+Accept the cookies by clicking the accept button.
+Enter the location into the search bar using the cy.get() and cy.type() commands.
+Wait for the dropdown to appear and select the first option using the cy.get() and cy.click() commands.
+Select the check-in date using the cy.get() and cy.click() commands.
+Select the check-out date using the cy.get() and cy.click() commands.
+Click the search button using the cy.get() and cy.click() commands.
+Verify that the search results page has loaded by checking that the header is visible using the cy.get() and cy.should() commands.
+Verify that the check-in and check-out dates are correct using the cy.get() and cy.contains() commands.
+Print the names of the properties found on the first page using the cy.get() and cy.each() commands.
+Finally, the decision was made to include a fixtures folder in the project containing a JSON file with the test data. This makes it easy to update the test data without having to modify the test code.
+
+Overall, these decisions were made in order to create a maintainable, readable, and effective test for the Booking.com website using the Cypress testing framework.
